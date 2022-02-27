@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>form</title>
+	</head>
+<body>
+
+<div class="wrapper">
+	<img src="1.jpg" class="image">
+	<div class="shutter">
+		<div class="content">hello </div>
+	</div>
+<div>
+
+
+<style>
+.wrapper{
+	border: 2px solid red;
+	width:300px;
+	position:relative;
+}
+
+.image{
+	width: 100%;
+}
+
+.shutter{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:0px;
+	transition: .2s ease;
+	background-color: white;
+	overflow: hidden;
+}
+
+.wrapper:hover .shutter{
+	height:100%;
+	bottom:0;
+	opacity:.5;
+}
+	
+</style>
+
+
+</body>
+</html>

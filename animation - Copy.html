@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>form</title>
+	</head>
+<body>
+
+<div class="wrapper">
+	<img src="1.png" class="image">
+	<div class="shutter">
+		<div class="content"><button>Submit</button> </div>
+	</div>
+<div>			
+<style>
+.wrapper{
+	border:2px solid black;
+	position:relative;
+	width:500px;
+}
+.image{
+	width:100%;
+}
+.shutter{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	transition:.5s ease;
+	width:0px;
+	overflow:hidden;
+	background:purple;
+}
+.wrapper:hover .shutter{
+	bottom:0px;
+	width:100%;
+	opacity:.5px;
+	display:flex;
+	text-align:center;
+	justify-content:center;
+}
+.content{
+	padding:35% 0px;
+	height:100%;
+}
+button{
+
+}
+</style>
+</body>
+</html>
